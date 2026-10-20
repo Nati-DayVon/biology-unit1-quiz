@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>Grade 10 Biology — Unit 1 Practice Exam</title>
+<style>
+:root{--bg:#0b1220;--panel:#121d30;--panel2:#18263d;--ink:#eef4ff;--muted:#a8b7cf;--line:#2c3c56;--accent:#7cdbbd;--accent2:#8eb7ff;--good:#8de0a8;--bad:#ff9b9b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#1a2b45 0,var(--bg) 55%);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:900px;margin:auto;padding:24px 16px 60px}.hero,.card{background:rgba(18,29,48,.96);border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:16px;box-shadow:0 12px 35px #0002}
+.kicker{color:var(--accent);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.76rem}h1{font-size:clamp(1.8rem,5vw,2.6rem);line-height:1.15;margin:.4rem 0 .8rem}h2{font-size:1.25rem;margin:0 0 12px}.muted{color:var(--muted)}.meta{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.pill{border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:var(--muted);font-size:.9rem}
+label.name-label{display:block;font-weight:650;margin:14px 0 6px}input[type=text]{width:100%;max-width:440px;background:#0b1424;color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:12px;font:inherit}
+.question{padding:16px 0;border-top:1px solid var(--line)}.question:first-of-type{border-top:0}.qtitle{font-weight:650;margin:0 0 10px}.choices{display:grid;gap:8px}.choice{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);background:#0e192a;border-radius:10px;padding:10px 12px;cursor:pointer}.choice:hover{border-color:#7196cb}.choice input{margin-top:5px;accent-color:var(--accent)}select{background:#0b1424;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px;font:inherit;max-width:100%}
+.match-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(160px,.85fr);gap:12px;align-items:center}.match-grid .match-term{font-weight:600}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}button{border:0;border-radius:11px;padding:12px 17px;font:inherit;font-weight:750;cursor:pointer}.primary{background:var(--accent);color:#08251d}.secondary{background:#263650;color:var(--ink);border:1px solid var(--line)}button:disabled{opacity:.5;cursor:not-allowed}
+#results{display:none}.score{font-size:2.3rem;font-weight:850;color:var(--accent);line-height:1.2}.result-item{padding:12px;border-radius:10px;margin:9px 0;background:#0e192a;border:1px solid var(--line)}.correct{border-left:4px solid var(--good)}.incorrect{border-left:4px solid var(--bad)}.status{font-weight:800}.small{font-size:.9rem}.footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:20px}
+@media(max-width:560px){main{padding:14px 10px 40px}.hero,.card{padding:16px}.match-grid{grid-template-columns:1fr;gap:5px}.match-grid select{width:100%}}
+@media print{body{background:white;color:#111}.hero,.card{background:white;color:#111;box-shadow:none;border-color:#bbb}.muted,.pill{color:#444}.choice{background:white;color:#111;border-color:#bbb}button{display:none}}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+<div class="kicker">Self-marking practice test</div>
+<h1>Grade 10 Biology</h1>
+<p><strong>Unit 1: Sub-fields of Biology</strong></p>
+<p class="muted">Try all 20 questions on your own. Your score and answer review appear after you submit.</p>
+<div class="meta"><span class="pill">20 questions</span><span class="pill">20 marks</span><span class="pill">True/False · Matching · Multiple Choice</span></div>
+<label class="name-label" for="studentName">Your name (optional)</label>
+<input id="studentName" type="text" maxlength="60" placeholder="Enter your name">
+<p class="muted small">This is a standalone file: answers are checked in your browser. It does not send your name or answers anywhere.</p>
+</header>
+
+<noscript><section class="card"><strong>JavaScript is disabled in this preview.</strong> Download this file and open it directly in Safari, Chrome, or Firefox to use automatic marking.</section></noscript>
+<form id="quiz" onsubmit="return markExam(event)">
+<section class="card">
+<h2>Part I — True or False <span class="muted small">(5 marks)</span></h2>
+<div class="question"><p class="qtitle">1. A scientist studying chemical reactions in living cells is working in biochemistry, while the study of heredity belongs to genetics.</p><div class="choices"><label class="choice"><input type="radio" name="q1" value="T"> True</label><label class="choice"><input type="radio" name="q1" value="F"> False</label></div></div>
+<div class="question"><p class="qtitle">2. Taxonomy and ecology are interchangeable branches of biology because both primarily classify organisms according to their environmental relationships.</p><div class="choices"><label class="choice"><input type="radio" name="q2" value="T"> True</label><label class="choice"><input type="radio" name="q2" value="F"> False</label></div></div>
+<div class="question"><p class="qtitle">3. A scientific discovery may have practical applications even when it was not originally made for commercial purposes.</p><div class="choices"><label class="choice"><input type="radio" name="q3" value="T"> True</label><label class="choice"><input type="radio" name="q3" value="F"> False</label></div></div>
+<div class="question"><p class="qtitle">4. Dr. Aklilu Lemma is known for research on sorghum varieties, while Professor Gebisa Ejeta is known for Endod research against schistosomiasis.</p><div class="choices"><label class="choice"><input type="radio" name="q4" value="T"> True</label><label class="choice"><input type="radio" name="q4" value="F"> False</label></div></div>
+<div class="question"><p class="qtitle">5. The development of the microscope helped scientists study structures that are too small to be seen clearly with the naked eye.</p><div class="choices"><label class="choice"><input type="radio" name="q5" value="T"> True</label><label class="choice"><input type="radio" name="q5" value="F"> False</label></div></div>
+</section>
+
+<section class="card">
+<h2>Part II — Matching <span class="muted small">(5 marks)</span></h2>
+<p class="muted">Match each term with the most appropriate description. Choose each answer from the dropdowns.</p>
+<div class="match-grid">
+<div class="match-term">6. Genetics</div><select name="q6" aria-label="Match Genetics"><option value="">Choose description…</option><option value="A">A. Study of organisms and their environment</option><option value="B">B. Study of chemical substances and reactions in living things</option><option value="C">C. Study of heredity and variation</option><option value="D">D. Identification, naming and classification of organisms</option><option value="E">E. Ethiopian researcher associated with Endod research against schistosomiasis</option></select>
+<div class="match-term">7. Ecology</div><select name="q7" aria-label="Match Ecology"><option value="">Choose description…</option><option value="A">A. Study of organisms and their environment</option><option value="B">B. Study of chemical substances and reactions in living things</option><option value="C">C. Study of heredity and variation</option><option value="D">D. Identification, naming and classification of organisms</option><option value="E">E. Ethiopian researcher associated with Endod research against schistosomiasis</option></select>
+<div class="match-term">8. Taxonomy</div><select name="q8" aria-label="Match Taxonomy"><option value="">Choose description…</option><option value="A">A. Study of organisms and their environment</option><option value="B">B. Study of chemical substances and reactions in living things</option><option value="C">C. Study of heredity and variation</option><option value="D">D. Identification, naming and classification of organisms</option><option value="E">E. Ethiopian researcher associated with Endod research against schistosomiasis</option></select>
+<div class="match-term">9. Biochemistry</div><select name="q9" aria-label="Match Biochemistry"><option value="">Choose description…</option><option value="A">A. Study of organisms and their environment</option><option value="B">B. Study of chemical substances and reactions in living things</option><option value="C">C. Study of heredity and variation</option><option value="D">D. Identification, naming and classification of organisms</option><option value="E">E. Ethiopian researcher associated with Endod research against schistosomiasis</option></select>
+<div class="match-term">10. Dr. Aklilu Lemma</div><select name="q10" aria-label="Match Dr. Aklilu Lemma"><option value="">Choose description…</option><option value="A">A. Study of organisms and their environment</option><option value="B">B. Study of chemical substances and reactions in living things</option><option value="C">C. Study of heredity and variation</option><option value="D">D. Identification, naming and classification of organisms</option><option value="E">E. Ethiopian researcher associated with Endod research against schistosomiasis</option></select>
+</div>
+</section>
+
+<section class="card">
+<h2>Part III — Multiple Choice <span class="muted small">(10 marks)</span></h2>
+<div class="question"><p class="qtitle">11. Which pair of branches would be most directly useful for studying the chemical basis of an inherited trait?</p><div class="choices"><label class="choice"><input type="radio" name="q11" value="A"> A. Ecology and taxonomy</label><label class="choice"><input type="radio" name="q11" value="B"> B. Genetics and biochemistry</label><label class="choice"><input type="radio" name="q11" value="C"> C. Anatomy and ecology</label><label class="choice"><input type="radio" name="q11" value="D"> D. Taxonomy and physiology</label></div></div>
+<div class="question"><p class="qtitle">12. Which statement best explains the relationship among branches of biology?</p><div class="choices"><label class="choice"><input type="radio" name="q12" value="A"> A. Each branch studies living things in complete isolation from every other branch.</label><label class="choice"><input type="radio" name="q12" value="B"> B. Only one branch of biology can be used to investigate a biological problem.</label><label class="choice"><input type="radio" name="q12" value="C"> C. Branches specialize in different questions but can overlap when studying complex problems.</label><label class="choice"><input type="radio" name="q12" value="D"> D. Branches differ only in the organisms they study, never in their methods.</label></div></div>
+<div class="question"><p class="qtitle">13. A researcher identifies an unknown organism, gives it a scientific name and places it in a classification group. Which branch is most directly involved?</p><div class="choices"><label class="choice"><input type="radio" name="q13" value="A"> A. Physiology</label><label class="choice"><input type="radio" name="q13" value="B"> B. Taxonomy</label><label class="choice"><input type="radio" name="q13" value="C"> C. Ecology</label><label class="choice"><input type="radio" name="q13" value="D"> D. Biochemistry</label></div></div>
+<div class="question"><p class="qtitle">14. Which example best illustrates an application of biological knowledge?</p><div class="choices"><label class="choice"><input type="radio" name="q14" value="A"> A. Listing the names of branches without using them</label><label class="choice"><input type="radio" name="q14" value="B"> B. Memorizing a definition but never applying it</label><label class="choice"><input type="radio" name="q14" value="C"> C. Using knowledge of heredity to help improve crop varieties</label><label class="choice"><input type="radio" name="q14" value="D"> D. Replacing observation with unsupported guesses</label></div></div>
+<div class="question"><p class="qtitle">15. Why can a discovery made in basic biological research become important years later?</p><div class="choices"><label class="choice"><input type="radio" name="q15" value="A"> A. Every discovery immediately becomes a commercial product.</label><label class="choice"><input type="radio" name="q15" value="B"> B. Later researchers may use the discovery as a foundation for new methods or technologies.</label><label class="choice"><input type="radio" name="q15" value="C"> C. Basic research never contributes to practical applications.</label><label class="choice"><input type="radio" name="q15" value="D"> D. Scientific knowledge cannot be developed further after publication.</label></div></div>
+<div class="question"><p class="qtitle">16. Which pairing correctly connects an Ethiopian scientist with the work for which they are known?</p><div class="choices"><label class="choice"><input type="radio" name="q16" value="A"> A. Dr. Aklilu Lemma — development of sorghum varieties</label><label class="choice"><input type="radio" name="q16" value="B"> B. Professor Gebisa Ejeta — discovery of the microscope</label><label class="choice"><input type="radio" name="q16" value="C"> C. Dr. Aklilu Lemma — research on Endod and schistosomiasis</label><label class="choice"><input type="radio" name="q16" value="D"> D. Professor Gebisa Ejeta — naming and classification of all organisms</label></div></div>
+<div class="question"><p class="qtitle">17. A biologist studies how drought changes competition among plants, insects and birds in one habitat. Which branch is most directly relevant?</p><div class="choices"><label class="choice"><input type="radio" name="q17" value="A"> A. Taxonomy</label><label class="choice"><input type="radio" name="q17" value="B"> B. Ecology</label><label class="choice"><input type="radio" name="q17" value="C"> C. Biochemistry only</label><label class="choice"><input type="radio" name="q17" value="D"> D. Genetics only</label></div></div>
+<div class="question"><p class="qtitle">18. Which development most directly allowed scientists to observe many microscopic organisms?</p><div class="choices"><label class="choice"><input type="radio" name="q18" value="A"> A. The invention of the compass</label><label class="choice"><input type="radio" name="q18" value="B"> B. The development of the microscope</label><label class="choice"><input type="radio" name="q18" value="C"> C. The invention of the steam engine</label><label class="choice"><input type="radio" name="q18" value="D"> D. The development of the telescope for distant stars</label></div></div>
+<div class="question"><p class="qtitle">19. A scientist investigates how the kidneys filter blood and regulate water balance. Which branch is most directly concerned with these functions?</p><div class="choices"><label class="choice"><input type="radio" name="q19" value="A"> A. Physiology</label><label class="choice"><input type="radio" name="q19" value="B"> B. Taxonomy</label><label class="choice"><input type="radio" name="q19" value="C"> C. Ecology</label><label class="choice"><input type="radio" name="q19" value="D"> D. Paleontology</label></div></div>
+<div class="question"><p class="qtitle">20. A plant breeder selects parent plants to increase the chance that offspring inherit a useful trait. Which branch is especially relevant to understanding inheritance?</p><div class="choices"><label class="choice"><input type="radio" name="q20" value="A"> A. Ecology</label><label class="choice"><input type="radio" name="q20" value="B"> B. Taxonomy</label><label class="choice"><input type="radio" name="q20" value="C"> C. Genetics</label><label class="choice"><input type="radio" name="q20" value="D"> D. Anatomy only</label></div></div>
+</section>
+<div class="buttons"><button class="primary" type="submit">Submit and mark my exam</button><button class="secondary" type="button" id="resetBtn">Reset answers</button></div>
+<p id="formNotice" class="muted small" role="status"></p>
+</form>
+
+<section class="card" id="results" aria-live="polite">
+<div class="kicker">Your result</div><h2 id="resultTitle">Exam marked</h2><div class="score" id="score"></div><p id="resultMessage"></p><div id="review"></div>
+<div class="buttons"><button class="primary" type="button" id="shareBtn">Share result text</button><button class="secondary" type="button" id="printBtn">Print / Save as PDF</button><button class="secondary" type="button" id="retryBtn">Try again</button></div>
+<p class="muted small" id="shareStatus" role="status"></p>
+</section>
+<div class="footer">Made for independent practice · Grade 10 Biology · Unit 1</div>
+</main>
+<script>
+function markExam(event) {
+  if (event) event.preventDefault();
+  const form = document.getElementById("quiz");
+  const key = {
+    q1:["T","Biochemistry studies chemical reactions in living things; genetics studies heredity."],
+    q2:["F","Taxonomy classifies organisms; ecology studies organisms and their environment."],
+    q3:["T","Basic discoveries can later support practical applications."],
+    q4:["F","Aklilu Lemma is associated with Endod research; Gebisa Ejeta with sorghum."],
+    q5:["T","Microscopes reveal structures too small to see clearly with the naked eye."],
+    q6:["C","Genetics is the study of heredity and variation."],
+    q7:["A","Ecology studies organisms and their environment."],
+    q8:["D","Taxonomy identifies, names, and classifies organisms."],
+    q9:["B","Biochemistry studies chemical substances and reactions in living things."],
+    q10:["E","Dr. Aklilu Lemma is associated with Endod and schistosomiasis research."],
+    q11:["B","Genetics examines inheritance; biochemistry investigates chemical bases of traits."],
+    q12:["C","Branches specialize but can overlap on complex biological problems."],
+    q13:["B","Identification, naming, and classification are central to taxonomy."],
+    q14:["C","Using heredity knowledge to improve crops is a practical application."],
+    q15:["B","Later researchers can build on earlier findings."],
+    q16:["C","Dr. Aklilu Lemma is associated with Endod and schistosomiasis research."],
+    q17:["B","Ecology studies interactions among organisms and their environment."],
+    q18:["B","Microscopes allow observation of microscopic organisms and structures."],
+    q19:["A","Physiology studies how body parts and systems function."],
+    q20:["C","Genetics explains inheritance of traits."]
+  };
+  let score=0, answered=0, review="";
+  for (let i=1;i<=20;i++) {
+    const id="q"+i, correctAnswer=key[id][0];
+    const field=form.elements.namedItem(id);
+    let chosen="";
+    if (field) {
+      if (field instanceof RadioNodeList || (typeof field.length==="number" && !field.tagName)) {
+        for (let j=0;j<field.length;j++) if(field[j].checked) chosen=field[j].value;
+      } else chosen=field.value || "";
+    }
+    const correct=chosen===correctAnswer;
+    if(chosen) answered++;
+    if(correct) score++;
+    const section=i<=5?"True/False":i<=10?"Matching":"Multiple choice";
+    const answerText = v => !v ? "Not answered" : (i<=5 ? (v==="T"?"True":"False") : v);
+    review += '<div class="result-item '+(correct?'correct':'incorrect')+'"><div class="status">'+(correct?'✓ Correct':'✗ Incorrect')+' · Question '+i+'</div><div class="small muted">'+section+'</div><p><strong>Your answer:</strong> '+answerText(chosen)+' &nbsp; <strong>Correct answer:</strong> '+answerText(correctAnswer)+'</p><p class="small">'+key[id][1]+'</p></div>';
+  }
+  const pct=Math.round(score/20*100);
+  const name=document.getElementById("studentName").value.trim();
+  document.getElementById("resultTitle").textContent=name ? name+"'s result" : "Exam marked";
+  document.getElementById("score").textContent=score+"/20 · "+pct+"%";
+  document.getElementById("resultMessage").textContent="You answered "+answered+" of 20 questions. "+(score===20?"Excellent — perfect score!":score>=16?"Great work! Review any missed answers below.":score>=10?"Good effort. Use the explanations below to revise.":"Keep practising — review each explanation and try again.");
+  document.getElementById("review").innerHTML=review;
+  document.getElementById("results").style.display="block";
+  document.getElementById("formNotice").textContent="Your exam has been marked. Scroll down to see your score and feedback.";
+  document.getElementById("results").scrollIntoView();
+  document.getElementById("shareBtn").dataset.text=["Grade 10 Biology — Unit 1 Practice Exam","Name: "+(name||"Not provided"),"Score: "+score+"/20 ("+pct+"%)","Answered: "+answered+"/20","Completed on: "+new Date().toLocaleDateString()].join("\\n");
+  return false;
+}
+document.addEventListener("DOMContentLoaded", function() {
+  const form=document.getElementById("quiz");
+  if(form) form.addEventListener("submit", markExam);
+  const reset = function() {
+    if(form) form.reset();
+    document.getElementById("results").style.display="none";
+    document.getElementById("formNotice").textContent="";
+    window.scrollTo(0,0);
+  };
+  document.getElementById("resetBtn").addEventListener("click", function(){if(confirm("Clear all answers and start over?")) reset();});
+  document.getElementById("retryBtn").addEventListener("click", reset);
+  document.getElementById("printBtn").addEventListener("click", function(){window.print();});
+  document.getElementById("shareBtn").addEventListener("click", async function(){
+    const txt=this.dataset.text || "My Grade 10 Biology Unit 1 exam result.";
+    const status=document.getElementById("shareStatus");
+    try {
+      if(navigator.share) { await navigator.share({title:"Biology exam result",text:txt}); status.textContent="Share menu opened."; }
+      else { const area=document.createElement("textarea"); area.value=txt; document.body.appendChild(area); area.select(); document.execCommand("copy"); area.remove(); status.textContent="Result text copied. Paste it into Telegram."; }
+    } catch(err) { status.textContent="Copy your score manually and paste it into Telegram."; }
+  });
+});
+</script>
+</body>
+</html>
